@@ -1,0 +1,127 @@
+body {
+    background-image: url('https://ryansechrest.com/content/images/2022/08/nodes.gif');
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;  
+    height: 100vh;  
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;  
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;  
+}
+
+header nav div:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav div:last-child {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+header nav li {
+    display: inline;
+    cursor: pointer;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1; 
+}
+
+
+section div:first-child {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 22px; 
+    font-weight: bold; 
+    text-align: left;  
+    line-height: 1.5;
+}
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section div:first-child span {
+    color: #e74c3c;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+section div:last-child {
+    flex: 1;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Form title */
+h1 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);  
+}
+
+label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav div:last-child {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
